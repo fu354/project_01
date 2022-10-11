@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    animation: rotate 2s linear infinite;
+}
+
+.center {
+    position: absolute;
+    top: 140px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(87, 87, 87);
+}
+
+.box .hezi {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.box .hezi:nth-child(1) span {
+    width: 150px;
+    height: 150px;
+    margin-top: 75px;
+    border-radius: 50% 50% 0 0;
+    background: -webkit-linear-gradient(left top, rgb(90, 211, 199), rgb(189, 13, 13));
+}
+
+.box .hezi:nth-child(2) span {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    border-radius: 0 50% 50% 0;
+    background: -webkit-linear-gradient(left top, rgb(233, 79, 194), rgb(189, 13, 13));
+}
+
+.box .hezi:nth-child(3) span {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    border-radius: 0 50% 50% 0;
+    background: -webkit-linear-gradient(left top, rgb(93, 210, 240), rgb(189, 13, 13));
+}
+
+.box .hezi:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+.box .hezi:nth-child(4) span {
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    border-radius: 0 0 50% 50%;
+    background: -webkit-linear-gradient(right top, rgb(252, 201, 91), rgb(189, 13, 13));
+}
+
+@keyframes rotate {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
